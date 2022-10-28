@@ -1,0 +1,23 @@
+<div class="login-container">
+  <img  class="film"src="assets/images/re.png" alt="">
+  <div class="logo">MovieRating</div>
+  <div class="desc">MovieRating is a gigantic compendium of movies, TV shows, and video games. Its primary use is to find detailed information about any actor, producer, or piece of media content.
+
+    When you pull up a movie, you'll see a synopsis, trailers, photos, a cast list, trivia, and much more. What makes MovieRating so useful is its cross-referencing. Upon opening the page for an actor, you'll see their best-known roles. Thus, MovieRating is great for those "what else have I seen her in?" moments.</div>
+</div>
+<div class="login-form">
+  <div class="form-group">
+    <label for="uname">Username</label>
+    <input type="text" name="uname" class="form-control" [(ngModel)]="username" placeholder="sumit"/>
+  </div>
+
+  <div class="form-group">
+    <label for="pword">Password</label>
+    <input type="password" name="pword" class="form-control" [(ngModel)]="password" placeholder="12345"/>
+
+  </div>
+  <div class="btn-container">
+    <div class="error">{{errorMsg}}</div>
+    <button class="btn btn-dark" (click)="login()">Login</button>
+  </div>
+</div>
